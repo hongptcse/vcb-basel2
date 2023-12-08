@@ -1,12 +1,16 @@
-#Trước khi chạy ứng dụng:
+# Trước khi chạy ứng dụng:
 - Chạy lệnh bên dưới để install các thư viện cần thiết:
   ### `npm install`
 
 - Project sử dụng tạm json-server để giả lập API, thực hiện cài đặt json-server
-  ### `npm install -g json-server
+  ### `npm install -g json-server`
 
 Vào thư mục /src/assets/jsonServer sau đó chạy lệnh bên dưới để giả lập API:
 ### json-server -p 8086 --watch login.json
+
+
+
+[hongptcse]
 
 
 # Getting Started with Create React App
