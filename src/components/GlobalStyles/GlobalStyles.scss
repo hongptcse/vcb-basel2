@@ -1,0 +1,99 @@
+@import 'normalize.css';
+//@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #fe2c55;
+  --black: #000;
+  --white: #fff;
+  --input-text-color: #2c2c2c;
+  --text-color: #333;
+  --font-family: 'TikTokFont';
+
+  // Default layout
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+  --default-layout-horizontal-spacer: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  color: var(--text-color);
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+// Font embedded
+@font-face {
+  font-family: Kuro;
+  src: url('/assets/fonts/Kuro-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Kuro;
+  src: url('/assets/fonts/Kuro-Medium.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Kuro;
+  src: url('/assets/fonts/Kuro-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: KuroLight;
+  src: url('/assets/fonts/Kuro-Light.otf');
+  font-weight: 400;
+}
+
+// Custom Typpy
+body {
+  .tippy-box {
+    border-radius: 8px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    background-color: rgba(84, 84, 84, 0.92);
+  }
+  .tippy-arrow {
+    width: 16px;
+    height: 16px;
+    color: rgba(84, 84, 84, 0.92);
+  }
+
+  .tippy-content {
+    padding: 8px 9px;
+  }
+
+  .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+    top: -8px;
+    left: 0;
+    border-width: 0 8px 8px;
+    border-bottom-color: initial;
+    transform-origin: center bottom;
+  }
+}

@@ -1,0 +1,28 @@
+.report-title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.report-title h2 {
+  font-family: 'Kuro';
+  font-weight: 700;
+  color: green;
+}
+
+.report-content {
+  font-family: 'KuroLight';
+  font-size: 1.4rem;
+}
+
+.thead-dark {
+  color: #fff;
+  background-color: #212529;
+  border-color: #32383e;
+}
+
+.thead-dark tr th {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
