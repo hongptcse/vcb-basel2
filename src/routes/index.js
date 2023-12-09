@@ -1,5 +1,6 @@
 // Layouts
-// import { HeaderOnly } from '~/components/Layout';
+//import { HeaderOnly } from '~/components/Layout';
+import { SideBarLayout } from '~/components/Layout';
 
 // Pages
 import Home from '~/pages/Home';
@@ -13,7 +14,7 @@ const publicRoutes = [
   { path: '/', component: Home },
   { path: '/login', component: Login, layout: null },
   { path: '/logout', component: Logout },
-  { path: '/upload', component: Upload },
+  { path: '/upload', component: Upload, layout: SideBarLayout },
   { path: '/download', component: Download },
 ];
 
