@@ -4,6 +4,7 @@ import * as searchServices from '~/apiServices/getStaffService';
 import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ExportCSV from '~/utils/ExportExcel';
 
 const cx = classNames.bind(styles);
 
@@ -25,6 +26,9 @@ function Home() {
     <div className={cx('wrapper')}>
       <div className={cx('report-title')}>
         <h2>BÁO CÁO CHI TIẾT NHÂN VIÊN</h2>
+      </div>
+      <div>
+        <ExportCSV v_data={searchResult} fileName="exp_staff_info" />
       </div>
       <div className={cx('report-content')}>
         <table className={cx('table table-striped')}>
